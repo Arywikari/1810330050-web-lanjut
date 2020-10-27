@@ -25,6 +25,6 @@ class Welcome extends CI_Controller {
 
 	public function nama()
 	{
-		
+		$this->load->view('v_contoh')
 	}
 }
