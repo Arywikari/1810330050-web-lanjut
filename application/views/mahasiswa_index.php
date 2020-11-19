@@ -8,17 +8,15 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark shodow bg-primary"
 	 style="background-color: #3175bf">
-		<a href="" class="navbar-brand">
-			Tugas
-		</a>
+		<a href="#" class="navbar-brand">Tugas</a>
 
 		<div class="navbar-nav">
-			<a href="" class="nav-link active">Home</a>
-			<a href="<?= base_url('mahasiswa/tambah') ?>" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('mahasiswaubg/ary')?>" class="nav-link active">Home</a>
+			<a href="<?= site_url('mahasiswaubg/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 
 		<div class="navbar-nav ml-auto">
-			<a href="" class="nav-link active">Ary</a>
+			<a href="" class="nav-link active">Ary Wikari</a>
 		</div>
 	</nav>
 
