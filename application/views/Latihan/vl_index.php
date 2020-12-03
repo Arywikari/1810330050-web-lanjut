@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mahasiswa</title>
+	<title>Latihan</title>
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css');?>">
 </head>
 <body>
@@ -11,8 +11,8 @@
 		<a href="#" class="navbar-brand">Tugas</a>
 
 		<div class="navbar-nav">
-			<a href="<?= site_url('mahasiswaubg/ary')?>" class="nav-link active">Home</a>
-			<a href="<?= site_url('mahasiswaubg/tambah')?>" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('latihan/index')?>" class="nav-link active">Home</a>
+			<a href="<?= site_url('latihan/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 
 		<div class="navbar-nav ml-auto">

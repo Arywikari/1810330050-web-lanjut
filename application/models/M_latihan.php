@@ -1,6 +1,6 @@
 <?php
 
-class M_mahasiswa extends CI_Model
+class M_latihan extends CI_Model
 {
 	private $tabel ='mahasiswa';
 

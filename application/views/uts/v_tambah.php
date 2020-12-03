@@ -5,14 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css');?>">
 </head>
 <body>
-
 	<nav class="navbar navbar-expand-lg navbar-dark shodow bg-primary"
 	 style="background-color: #3175bf">
-		<a href="#" class="navbar-brand">Tugas</a>
+		<a href="#" class="navbar-brand">UTS</a>
 
 		<div class="navbar-nav">
-			<a href="<?= site_url('mahasiswaubg/ary')?>" class="nav-link active">Home</a>
-			<a href="<?= site_url('mahasiswaubg/tambah')?>" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('controllera/index')?>" class="nav-link active">Home</a>
+			<a href="<?= site_url('controllera/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 
 		<div class="navbar-nav ml-auto">
@@ -21,30 +20,29 @@
 	</nav>
 
 	<div class="alert-success text-center mt-2">
-		Tambah Data Mahasiswa
+		Tambah Data Kampus
 	</div>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card">
-					<div class="card-header"> Form Data Mahasiswa </div>
-						<form action="<?= site_url('mahasiswaubg/proses_tambah') ?>" method="post">
+					<div class="card-header"> Form Data Kampus </div>
+						<form action="<?= site_url('controllera/proses_tambah') ?>" method="post">
 							<div class="form-group">
-								<label for = "">NIM</label>
-									<input type="text" class="form-control" name="txtnim">
+								<label for = "">Jurusan</label>
+									<input type="text" class="form-control" name="txtjurusan">
 								</div>
 								<div class="form-group">
-									<label for = "">Nama</label>
-										<input type="text" class="form-control" name="txtnama">
+									<label for = "">Kelas</label>
+										<input type="text" class="form-control" name="txtkelas">
 								</div>
 								<div class="form-group">
-									<label for = "">Alamat</label>
-										<textarea name="txtalamat" cols="30"
-										class="form-control" rows="3"></textarea>
+									<label for = "">Isi</label>
+										<input type="text" class="form-control" name="txtisi">
 								</div>
 								<input type="submit" name="submit" value="simpan" class="btn btn-primary">
-								<a href="<?= site_url('mahasiswaubg/ary')?>" class="btn btn-warning">Batal</a>
+								<a href="<?= site_url('controllera/index')?>" class="btn btn-warning">Batal</a>
 							</form>
 						</div>
 					</div>

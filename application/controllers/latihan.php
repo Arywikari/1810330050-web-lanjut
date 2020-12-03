@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mahasiswaubg extends CI_Controller {
+class latihan extends CI_Controller {
 
 	public function __construct()
 	{
@@ -12,18 +12,18 @@ class Mahasiswaubg extends CI_Controller {
 
 
 
-	public function ary()
+	public function index()
 	{
 		$data['tabel'] = $this->M_mahasiswa->semuadata();
 		// cek data
 		// var_dump($data);
 		// die();
-		$this->load->view('mahasiswa_index', $data);
+		$this->load->view('latihan/vl_index', $data);
 	}
 
 	public function tambah()
 	{
-		$this->load->view('mahasiswa_tambah');
+		$this->load->view('latihan/vl_tambah');
 	}
 
 	public function proses_tambah()
@@ -37,7 +37,7 @@ class Mahasiswaubg extends CI_Controller {
 
 		$this->M_mahasiswa->simpandata($data);
 
-		redirect('mahasiswaubg/ary');
+		redirect('latihan/index');
 
 
 	}
